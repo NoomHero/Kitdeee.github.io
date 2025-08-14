@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HS4 ยกระดับ มาตรฐานสุขภาพไทย</title>
+    <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/hs4-web-1.css">
+    <!-- Bootstrap 5 -->   
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css">
+     <!-- Chart.js -->
+     <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js"></script>
+
+
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <a href="#" class="logo">HS4 Health Service Support Standards System</a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a data-scroll href="#opendata">ข้อมูลเปิด</a></li>
+                    <li><a data-scroll href="#standard">มาตรฐาน HS4</a></li>
+                    <li><a data-scroll href="#moph">โรงพยาบาลยอดเยี่ยม</a></li>
+                    <li><a data-scroll href="#sumary">ข้อมูลสรุป</a></li>
+                    <li><a data-scroll href="#service">มาตรฐานบริการ</a></li>
+                </ul>
+            </nav>
+            <button class="mobile-nav-toggle" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container hero-content">
+                <div class="hero-text">
+                    <span class="hero-badge">ระบบประเมินมาตรฐานสุขภาพ</span>
+                    <h1>HS4 ยกระดับ มาตรฐาน <br>สุขภาพ ไทย</h1>
+                    <p>ระบบประเมินมาตรฐานสุขภาพที่ทันสมัย ช่วยยกระดับการให้บริการด้านสุขภาพในประเทศไทย ด้วยการประเมินที่เป็นระบบและมีมาตรฐาน</p>
+                    <div class="hero-buttons">
+                        <a href="#" class="btn btn-primary">เรียนรู้เพิ่มเติม</a>
+                        <a href="#" class="btn btn-secondary">มาตรฐานของเรา</a>
+                    </div>
+                    <div class="hero-stats">
+                        <div><strong>500+</strong> โรงพยาบาลที่ได้รับการรับรอง</div>
+                        <div><strong>98%</strong> ความพึงพอใจ</div>
+                        <div><strong>10+</strong> ปีแห่งความเชี่ยวชาญ</div>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="visual-box">
+                        <!-- <i class="fas fa-microphone-alt fa-5x"></i> -->
+                        <h3>ระบบประเมินที่ทันสมัย</h3>
+                        <img src="/images/HS4 Logo.png">
+                        <p>HS4 ช่วยให้โรงพยาบาลและหน่วยบริการสุขภาพสามารถประเมินและยกระดับมาตรฐานการบริการให้มีประสิทธิภาพ</p>
+                        <div class="badge-check"><i class="fas fa-check-circle"></i> ครอบคลุมทุกมิติของมาตรฐานสุขภาพ</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Open Data Section -->
+        <section class="open-data" id="opendata">
+            <div class="container">
+                <span class="section-tag">OPEN DATA</span>
+                <h2>ข้อมูลเปิดเพื่อความโปร่งใสและการพัฒนา</h2>
+                <p>HS4 มุ่งมั่นในการเปิดเผยข้อมูลเพื่อส่งเสริมความโปร่งใสและการพัฒนาระบบสุขภาพไทยให้เป็นประโยชน์ต่อทุกภาคส่วนในการนำข้อมูลไปใช้ในการวิเคราะห์และพัฒนาต่อยอด</p>
+                <div class="cards-grid">
+                    <div class="card">
+                        <i class="fas fa-chart-line"></i>
+                        <h3>ข้อมูลสถิติโรงพยาบาล</h3>
+                        <p>ข้อมูลสถิติดำเนินงานของโรงพยาบาลทั่วประเทศที่เปิดเผยต่อสาธารณะ</p>
+                    </div>
+                    <div class="card">
+                        <i class="fas fa-file-alt"></i>
+                        <h3>ข้อมูลการประเมินมาตรฐาน</h3>
+                        <p>ผลการประเมินตามมาตรฐาน HS4 ของโรงพยาบาลต่างๆ</p>
+                    </div>
+                    <div class="card">
+                        <i class="fas fa-award"></i>
+                        <h3>ข้อมูลการรับรองมาตรฐาน</h3>
+                        <p>รายชื่อและประเภทของการรับรองมาตรฐานที่โรงพยาบาลได้รับ</p>
+                    </div>
+                    <div class="card">
+                        <i class="fas fa-users"></i>
+                        <h3>ข้อมูลบุคลากรด้านสุขภาพ</h3>
+                        <p>สถิติและข้อมูลเกี่ยวกับบุคลากรด้านสุขภาพในระดับประเทศ</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Data Table Section (Simplified) -->
+        <section class="data-table-info">
+            <div class="container">
+                <h3>ประเภทข้อมูลที่เรารวบรวม</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th style="width: 20%;">ประเภทข้อมูล</th>
+                            <th style="width: 25%;">รายละเอียด</th>
+                            <th style="width: 15%;">รูปแบบไฟล์</th>
+                            <th style="width: 10%;">การอัพเดท</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td data-label="ประเภทข้อมูล">สถิติโรงพยาบาล</td>
+                            <td data-label="รายละเอียด">ข้อมูลสถิติการให้บริการของโรงพยาบาลทั่วประเทศ</td>
+                            <td data-label="รูปแบบไฟล์">CSV, JSON, Excel</td>
+                            <td data-label="การอัพเดท">รายเดือน</td>
+                        </tr>
+                        <tr>
+                            <td data-label="ประเภทข้อมูล">การประเมินมาตรฐาน</td>
+                            <td data-label="รายละเอียด">ผลการประเมินตามมาตรฐาน HS4</td>
+                            <td data-label="รูปแบบไฟล์">JSON, API</td>
+                            <td data-label="การอัพเดท">รายไตรมาส</td>
+                        </tr>
+                        <tr>
+                            <td data-label="ประเภทข้อมูล">การรับรองมาตรฐาน</td>
+                            <td data-label="รายละเอียด">รายชื่อและประเภทของการรับรองมาตรฐาน</td>
+                            <td data-label="รูปแบบไฟล์">CSV, JSON</td>
+                            <td data-label="การอัพเดท">รายเดือน</td>
+                        </tr>
+                        <tr>
+                            <td data-label="ประเภทข้อมูล">บุคลากรสุขภาพ</td>
+                            <td data-label="รายละเอียด">สถิติบุคลากรสุขภาพทั่วประเทศ</td>
+                            <td data-label="รูปแบบไฟล์">CSV, Excel</td>
+                            <td data-label="การอัพเดท">รายปี</td>
+                        </tr>
+                        <!-- Add more rows as needed -->
+                    </tbody>
+                </table>
+                <a href="#" class="btn btn-primary"><i class="fas fa-download"></i> ดาวน์โหลดชุดข้อมูลเปิดทั้งหมด</a>
+            </div>
+        </section>
+
+        <!-- HA Standards Section -->
+        <section class="ha-standards" id="standard">
+            <div class="container">
+                <span class="section-tag pink-tag">มาตรฐาน HS4</span>
+                <h2>การปรับตามมาตรฐาน HS4</h2>
+                <p>การปรับตามมาตรฐานโรงพยาบาลและบริการสุขภาพ (HS4 - Health Service Support Standards System
+) ช่วยยกระดับคุณภาพของบริการและการดูแลผู้ป่วย</p>
+                <div class="ha-content">
+                    <div class="ha-levels">
+                        <h4>ระดับการรับรองมาตรฐาน HS4</h4>
+                        <p>มาตรฐาน HS4 แบ่งออกเป็นหลายระดับ ตั้งแต่ขั้นพื้นฐานไปจนถึงระดับที่เข้มข้น ขั้นตอนและข้อกำหนดแตกต่างกัน</p>
+                        <div class="level-item active">
+                            <h5>การรับรองคุณภาพขั้นพื้นฐาน (ระดับ 1)</h5>
+                            <p>มาตรฐานขั้นพื้นฐานที่โรงพยาบาลทุกแห่งควรผ่านการรับรอง เพื่อความปลอดภัยของผู้ป่วย</p>
+                        </div>
+                        <div class="level-item">
+                            <h5>การรับรองคุณภาพขั้นกลาง (ระดับ 2)</h5>
+                            <p>มาตรฐานที่ครอบคลุมคุณภาพกระบวนงานและบริหารจัดการที่มีประสิทธิภาพ</p>
+                        </div>
+                        <div class="level-item">
+                            <h5>การรับรองคุณภาพขั้นสูง (ระดับ 3)</h5>
+                            <p>มาตรฐานที่มุ่งเน้นการพัฒนาอย่างต่อเนื่องและนวัตกรรมในการดูแลผู้ป่วย</p>
+                        </div>
+                        <div class="level-item">
+                            <h5>การรับรองคุณภาพระดับเป็นเลิศ (ระดับ 4)</h5>
+                            <p>มาตรฐานที่มุ่งเน้นการพัฒนาอย่างต่อเนื่องและนวัตกรรมในการดูแลผู้ป่วย</p>
+                        </div>
+                    </div>
+                    <div class="ha-steps">
+                        <h4>ขั้นตอนการปรับตามมาตรฐาน HS4</h4>
+                        <ol>
+                            <li><span>01</span> ประเมินตนเองตามมาตรฐาน HS4
+                              <p>โรงพยาบาลทำการประเมินตนเองตามเกณฑ์มาตรฐาน HS4 เพื่อหาโอกาสในการพัฒนา</p>
+                            </li>
+                            <li><span>02</span> วางแผนการปรับปรุง
+                            <p>จัดทำแผนการปรับปรุงตามผลการประเมินตนเอง โดยกำหนดเป้าหมายและระยะเวลาที่ชัดเจน</p>
+                            </li>
+                            <li><span>03</span> ดำเนินการตามแผน
+                            <p>ดำเนินการปรับปรุงตามแผนที่วางไว้ โดยมีการติดตามความก้าวหน้าอย่างต่อเนื่อง</p>
+                            </li>
+                            <li><span>04</span> รับการตรวจเยี่ยม
+                            <p>รับการตรวจเยี่ยมและประเมินจากผู้เยี่ยมสำรวจที่มีประสบการณ์และความเชี่ยวชาญ</p>
+                            </li>
+                            <li><span>05</span> รับข้อเสนอแนะและปรับปรุง
+                            <p>นำข้อเสนอแนะจากผู้เยี่ยมสำรวจมาปรับปรุงและพัฒนาคุณภาพอย่างต่อเนื่อง</p>
+                            </li>
+                            <li><span>06</span> รับการรับรองมาตรฐาน
+                            <p>เมื่อผ่านการประเมินตามเกณฑ์ที่กำหนด จะได้รับการรับรองมาตรฐาน HS4</p>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+                <div class="ha-steps">    
+                        <h3>ประโยชน์ของการได้รับการรับรอง HS4</h3>
+                        
+                        <ol>
+                            <li><p class="fas fa-check-circle"></p> เพิ่มความมั่นใจในคุณภาพและความปลอดภัยแก่ผู้รับบริการ</li>
+                            <li><p class="fas fa-check-circle"></p> สร้างวัฒนธรรมคุณภาพและการพัฒนาอย่างต่อเนื่องในองค์กร</li>
+                            <li><p class="fas fa-check-circle"></p> เพิ่มความมั่นใจในคุณภาพและความปลอดภัยแก่ผู้รับบริการ</li>
+                        </ol>
+
+                        
+        </div>
+                
+                </div>
+                
+            </div>
+        </section>
+
+        <!-- Hospitals Section (Placeholder) -->
+        <section class="featured-hospitals" id="moph">
+            <div class="container">
+                <span class="section-tag pink-tag">โรงพยาบาล ระดับ Platinum</span>
+                <h2>โรงพยาบาลที่ได้รับการรับรองคุณภาพระดับ Platinum</h2>
+                <p>โรงพยาบาลเหล่านี้ได้ผ่านการรับรองมาตรฐานคุณภาพขั้นสูงสุด แสดงถึงความมุ่งมั่นในการให้บริการที่เป็นเลิศและการพัฒนาอย่างต่อเนื่อง</p>
+                
+                <div class="hospital-grid">
+                    <!-- Hospital Card Example (Repeat 4-8 times) -->
+                    <div class="hospital-card">
+                        <img src="/images/langu.png" alt="โรงพยาบาลตัวอย่าง">
+                        <span class="hospital-tag">โรงพยาบาลชุมชน</span>
+                        <div class="hospital-rating"><i class="fas fa-star"></i> 4.9</div>
+                        <h3>โรงพยาบาลละงู</h3>
+                        <p><i class="fas fa-map-marker-alt"></i>จังหวัดสตูล</p>
+                        
+                    </div>
+                    <div class="hospital-card">
+                        <img src="/images/kph.png" alt="โรงพยาบาลตัวอย่าง">
+                        <span class="hospital-tag">โรงพยาบาลทั่วไป</span>
+                         <div class="hospital-rating"><i class="fas fa-star"></i> 4.8</div>
+                        <h3>โรงพยาบาลกำแพงเพชร</h3>
+                        <p><i class="fas fa-map-marker-alt"></i>จังหวัดกำแพงเพชร</p>
+                        
+                    </div><div class="hospital-card">
+                        <img src="/images/fang.png" alt="โรงพยาบาลตัวอย่าง">
+                        <span class="hospital-tag">โรงพยาบาลทั่วไป</span>
+                        <div class="hospital-rating"><i class="fas fa-star"></i> 4.9</div>
+                        <h3>โรงพยาบาลฝาง</h3>
+                        <p><i class="fas fa-map-marker-alt"></i>จังหวัดเชียงใหม่</p>
+                        
+                    </div>
+                    <div class="hospital-card">
+                        <img src="/images/nakhonphanom.png" alt="โรงพยาบาลตัวอย่าง">
+                        <span class="hospital-tag">โรงพยาบาลทั่วไป</span>
+                         <div class="hospital-rating"><i class="fas fa-star"></i> 4.8</div>
+                        <h3>โรงพยาบาลนครพนม</h3>
+                        <p><i class="fas fa-map-marker-alt"></i>จังหวัดนครพนม</p>
+                        
+                    </div>
+                    <div class="hospital-card">
+                        <img src="/images/loengnoktha.png" alt="โรงพยาบาลตัวอย่าง">
+                        <span class="hospital-tag">โรงพยาบาลชุมชน</span>
+                        <div class="hospital-rating"><i class="fas fa-star"></i> 4.8</div>
+                        <h3>โรงพยาบาลสมเด็จพระยุพราชเลิงนกทา</h3>
+                        <p><i class="fas fa-map-marker-alt"></i>จังหวัดยโสธร</p>
+                        
+                    </div>
+                    <div class="hospital-card">
+                        <img src="/images/ppk.png" alt="โรงพยาบาลตัวอย่าง">
+                        <span class="hospital-tag">โรงพยาบาลทั่วไป</span>
+                         <div class="hospital-rating"><i class="fas fa-star"></i> 4.9</div>
+                        <h3>โรงพยาบาลพระปกเกล้า</h3>
+                        <p><i class="fas fa-map-marker-alt"></i>จังหวัดจันทบุรี</p>
+                        
+                    </div>
+                     <!-- Add more hospital cards -->
+                </div>
+               
+            </div>
+        </section>
+
+        <!-- Data Visualization (Placeholder for Charts) -->
+        <section class="data-visualization" id="sumary">
+            <div class="container">
+                <span class="section-tag pink-tag">ข้อมูลสรุป</span>
+                <h2>ภาพรวมข้อมูลทั้งหมด</h2>
+                <p>ข้อมูลสรุปเกี่ยวกับโรงพยาบาลและการรับรองมาตรฐานทั่วประเทศ ในรูปแบบกราฟและตารางที่เข้าใจง่าย</p>
+                <div class="tabs">
+                    <button class="tab-button active" onclick="openTab(event, 'graph-view')">กราฟ</button>
+                    <button class="tab-button" onclick="openTab(event, 'table-view')">ตาราง</button>
+                </div>
+
+                <div id="graph-view" class="tab-content active">
+                    <div class="chart-container">
+                        <h4>จำนวนโรงพยาบาลที่ได้รับการรับรองตามภูมิภาค</h4>                                      
+                            <div class="card-body">
+                            <canvas id="chartLine"></canvas>
+                            </div>
+                    </div>
+                    
+                        <script>
+                            // Line_Data
+                            var chartLine_Data = {
+                            labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun'],
+                            datasets: [{
+                                label: '# of Month',
+                                fill: false,
+                                data: [17, 12, 5, 7, 2, 10],
+                                backgroundColor: [  'green','green','green','green','green','green'],
+                                borderColor: 'green',
+                                borderWidth: 2,
+                                pointRadius: 10,
+                            }]
+                            }
+                            // Line Chart
+                            var chartLine = document.getElementById('chartLine').getContext('2d');
+                            var chartLine_options = {
+                            scales: {
+                                yAxes: [{
+                                ticks: {
+                                    beginAtZero: true
+                                }
+                                }]
+                            }
+                            }
+                            if (chartLine) {
+                            new Chart(chartLine, {
+                                type: 'line',
+                                data: chartLine_Data,
+                                options: chartLine_options,
+                            });
+                            }
+                        </script>
+                    
+                    <div class="charts-row">
+                        <div class="chart-container pie-chart-container">
+                            <h4>ประเภทของโรงพยาบาลที่ได้รับการรับรอง</h4>
+                            
+                            <div class="card-body">
+                            <canvas id="myChart" style="width:100%;max-width:600px"></canvas>
+                            </div> 
+                            
+                            <script>
+                                    var xValues = ["สบศ. 1", "สบศ. 2", "สบศ. 3", "สบศ. 4", "สบศ. 5"];
+                                    var yValues = [55, 49, 44, 24, 25];
+                                    var barColors = ["green", "green","green","green","green"];
+
+                                    new Chart("myChart", {
+                                    type: "bar",
+                                    data: {
+                                        labels: xValues,
+                                        datasets: [{
+                                        backgroundColor: barColors,
+                                        data: yValues
+                                        }]
+                                    },
+                                    options: {
+                                        legend: {display: false},
+                                        title: {
+                                        display: true,
+                                        text: ""
+                                        }
+                                    }
+                                    });
+                                </script>
+                        </div>
+                        <div class="chart-container line-chart-container">
+                            <h4>แนวโน้มการรับรองมาตรฐาน (ปี 2561-2566)</h4>
+                            
+                           <div class="card-body">
+                            <canvas id="myChart-2" style="width:100%;max-width:600px"></canvas>
+                            </div>     
+                               
+                            <script>
+                                    var xValues = ["ปี 2563", "ปี 2564", "ปี 2565", "ปี 2566", "ปี 2567"];
+                                    var yValues = [55, 49, 44, 24, 15];
+                                    var barColors = [
+                                    "#1fd312",
+                                    "#19ab0f",                           
+                                    "#108907",
+                                    "#094e04",
+                                    "#064702"
+                                    ];
+                                    
+
+                                    new Chart("myChart-2", {
+                                    type: "pie",
+                                    data: {
+                                        labels: xValues,
+                                        datasets: [{
+                                        backgroundColor: barColors,
+                                        data: yValues
+                                        }]
+                                    },
+                                    options: {
+                                        title: {
+                                        display: true,
+                                        text: ""
+                                        }
+                                    }
+                                    });
+                                    </script>
+
+                        </div>
+                    </div>
+                </div>
+                <div id="table-view" class="tab-content">
+                   
+                    <div class="chart-container">
+                    <table>
+                        <h4>จำนวนโรงพยาบาลที่ได้รับการรับรองตามภูมิภาค</h4>
+                        <thead>
+                            <tr>
+                            <th style="width: 30%;">ภูมิภาค</th>
+                            <th style="width: 30%;">จำนวนโรงพยาบาล</th>
+                            <th style="width: 30%;">สัดส่วน (%)</th>
+                            
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                            <td data-label="Provincial">กรุงเทพฯ</td>
+                            <td data-label="Number">120</td>
+                            <td data-label="Proportion">20.0%</td>
+                            
+                            </tr>
+                            <tr>
+                            <td scope="row" data-label="Provincial">ภาคกลาง</td>
+                            <td data-label="Number ">98</td>
+                            <td data-label="Proportion">16.3%</td>
+                            
+                            </tr>
+                            <tr>
+                            <td scope="row" data-label="Provincial">ภาคเหนือ</td>
+                            <td data-label="Number ">86</td>
+                            <td data-label="Proportion">14.3%</td>
+                            
+                            </tr>
+                            <tr>
+                            <td scope="row" data-label="Provincial">ภาคตะวันออกเฉียงเหนือ</td>
+                            <td data-label="Number ">99</td>
+                            <td data-label="Proportion">16.5%</td>
+                            
+                            </tr>
+                            <tr>
+                            <td scope="row" data-label="Provincial">ภาคตะวันออก</td>
+                            <td data-label="Number ">65</td>
+                            <td data-label="Proportion">10.8%</td>
+                            
+                            </tr>
+                            <tr>
+                            <td scope="row" data-label="Provincial">ภาคตะวันตก</td>
+                            <td data-label="Number ">45</td>
+                            <td data-label="Proportion">7.5%</td>
+                           
+                            </tr>
+                            <tr>
+                            <td scope="row" data-label="Provincial">ภาคใต้</td>
+                            <td data-label="Number ">87</td>
+                            <td data-label="Proportion">14.5%</td>
+                            
+                            </tr>
+                            <tr>
+                            <td scope="row" data-label="Provincial">รวม</td>
+                            <td data-label="Number ">600</td>
+                            <td data-label="Proportion">100%</td>
+                            
+                            </tr>
+                        </tbody>
+                    </table>
+                    </div>
+
+                    <div class="chart-container">
+                    <table>
+                        <h4>ประเภทของโรงพยาบาลที่ได้รับการรับรอง</h4>
+                        <thead>
+                            <tr>
+                            <th style="width: 30%;">ประเภทโรงพยาบาล</th>
+                            <th style="width: 30%;">จำนวน</th>
+                            <th style="width: 30%;">สัดส่วน (%)</th>
+                            
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                            <td data-label="Account">โรงเรียนแพทย์</td>
+                            <td data-label="Number ">34</td>
+                            <td data-label="Amount">2.5%</td>
+                           
+                            </tr>
+                            <tr>
+                            <td scope="row" data-label="Account">โรงพยาบาลศูนย์</td>
+                            <td data-label="Number ">88</td>
+                            <td data-label="Amount">5.7%</td>
+                            
+                            </tr>
+                            <tr>
+                            <td scope="row" data-label="Account">โรงพยาบาลชุมชน</td>
+                            <td data-label="Number ">322</td>
+                            <td data-label="Amount">53.7%</td>
+                            
+                            </tr>
+                            <tr>
+                            <td scope="row" data-label="Acount">โรงพยาบาลเอกชน</td>
+                            <td data-label="Number ">141</td>
+                            <td data-label="Amount">23.5%</td>
+                            
+                            </tr>
+                           
+                            <tr>
+                            <td scope="row" data-label="Acount">รวม</td>
+                            <td data-label="Number ">600</td>
+                            <td data-label="Amount">100%</td>
+                           
+                            </tr>
+                        </tbody>
+                    </table>
+                    </div>
+
+                    <div class="chart-container">
+                    <table>
+                        <h4>แนวโน้มการรับรองมาตรฐาน (ปี 2561-2566)</h4>
+                        <thead>
+                            <tr>
+                            <th style="width: 20%;">ปี</th>
+                            <th style="width: 20%;">รับรองขั้นพื้นฐาน</th>
+                            <th style="width: 20%;">รับรองขั้นสูง</th>
+                            <th style="width: 20%;">รับรองขั้นเป็นเลิศ</th>
+                            <th style="width: 20%;">รวม</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                            <td>2561</td>
+                            <td>350</td>
+                            <td>120</td>
+                            <td>30</td>
+                            <td>500</td>
+                            </tr>
+                            <tr>
+                            <td>2562</td>
+                            <td>380</td>
+                            <td>150</td>
+                            <td>45</td>
+                            <td>575</td>
+                            </tr>
+                            <tr>
+                            <td>2563</td>
+                            <td>410</td>
+                            <td>180</td>
+                            <td>60</td>
+                            <td>650</td>
+                            </tr>
+                            <tr>
+                            <td>2564</td>
+                            <td>430</td>
+                            <td>210</td>
+                            <td>75</td>
+                            <td>715</td>
+                            </tr>
+                            <tr>
+                            <td>2565</td>
+                            <td>450</td>
+                            <td>240</td>
+                            <td>95</td>
+                            <td>758</td>
+                            </tr>
+                            <tr>
+                            <td>2566</td>
+                            <td>470</td>
+                            <td>270</td>
+                            <td>115</td>
+                            <td>855</td>
+                            </tr>
+                           
+                        </tbody>
+                    </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Data Standard Sevice -->
+        <section class="hero-content">
+            
+                <div class="hero-text">
+                <h2>มาตรฐานบริการสุขภาพและการดำเนินงาน</h2>
+                <p>ข้อมูลเกี่ยวกับมาตรฐานบริการสุขภาพ การรับรอง ผู้เยี่ยมสำรวจ การจัดการองค์ความรู้ และระบบตรวจที่ช่วยในการพัฒนาคุณภาพการให้บริการ</p>
+                </div>
+                <div class="hero-visual"><img src="/images/HS4-Standard1.png" alt="มาตรฐานบริการสุขภาพ"></div>
+                       
+        </section>
+        <section class="open-data" id="service">
+            <div class="container">
+                <span class="section-tag">ข้อมูลเพิ่มเติม</span>
+                <h2>มาตรฐานบริการสุขภาพและการดำเนินงาน</h2>
+                <p>ข้อมูลเกี่ยวกับมาตรฐานบริการสุขภาพ การรับรอง ผู้เยี่ยมสำรวจ การจัดการองค์ความรู้ และระบบตรวจที่ช่วยในการพัฒนาคุณภาพการให้บริการ</p>
+                <div class="cards-grid">
+                    <div class="card">
+                        <i class="fas fa-globe"></i>
+                        <h3>มาตรฐานบริการสุขภาพคืออะไร ?</h3>
+                        <p>มาตรฐานบริการสุขภาพ คือ เกณฑ์ที่กำหนดขึ้นเพื่อใช้เป็นแนวทางในการประเมินและพัฒนาคุณภาพของการให้บริการด้านสุขภาพ มาตรฐานเหล่านี้ครอบคลุมทุกมิติของการให้บริการ ตั้งแต่ระบบบริหารจัดการ การดูแลผู้ป่วย ความปลอดภัย ไปจนถึงการพัฒนาบุคลากร</p>
+                    </div>
+                    <div class="card">
+                        <i class="fas fa-receipt"></i>
+                        <h3>องค์ประกอบของมาตรฐาน</h3>
+                        <p>องค์ประกอบของมาตรฐานบริการสุขภาพประกอบด้วยหลายส่วน ได้แก่ การนำองค์กร การวางแผนเชิงกลยุทธ์ การมุ่งเน้นผู้ป่วยและผู้รับบริการ การวัด วิเคราะห์ และจัดการความรู้ การมุ่งเน้นทรัพยากรบุคคล การจัดการกระบวนการ และผลลัพธ์การดำเนินการ</p>
+                    </div>
+                    <div class="card">
+                        <i class="fas fa-person-chalkboard"></i>
+                        <h3>ประโยชน์ของมาตรฐานบริการสุขภาพ</h3>
+                        <p>การมีมาตรฐานบริการสุขภาพช่วยให้องค์กรสามารถให้บริการที่มีคุณภาพและปลอดภัย สร้างความมั่นใจให้แก่ผู้รับบริการ ลดความเสี่ยงและความผิดพลาด ตลอดจนช่วยเพิ่มประสิทธิภาพในการให้บริการและการบริหารจัดการทรัพยากร</p>
+                    </div>
+                </div>
+                <div class="chart-container" style="margin-top: 2em;">
+                    <table>
+                        <h4>มาตรฐานสำคัญที่เกี่ยวข้อง</h4>
+                        <thead>
+                            <tr>
+                            <th style="width: 25%;">มาตรฐาน</th>
+                            <th style="width: 25%;">องค์กรที่รับรอง</th>
+                            <th style="width: 25%;">ขอบเขต</th>
+                            <th style="width: 20%;">ระยะเวลารับรอง</th>  
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                            <td data-label="มาตรฐาน">HA (Hospital Accreditation)</td>
+                            <td data-label="องค์กรที่รับรอง">สถาบันรับรองคุณภาพสถานพยาบาล (สรพ.)	</td>
+                            <td data-label="ขอบเขต">โรงพยาบาลทั้งองค์กร</td>
+                            <td data-label="ระยะเวลารับรอง">3 ปี</td>
+                            </tr>
+                            <tr>
+                            <td data-label="มาตรฐาน">JCI (Joint Commission International)</td>
+                            <td data-label="องค์กรที่รับรอง">Joint Commission International	</td>
+                            <td data-label="ขอบเขต">โรงพยาบาลทั้งองค์กร (มาตรฐานสากล)</td>
+                            <td data-label="ระยะเวลารับรอง">3 ปี</td>
+                            </tr>
+                            <tr>
+                            <td data-label="มาตรฐาน">ISO 9001</td>
+                            <td data-label="องค์กรที่รับรอง">องค์กรรับรองตามมาตรฐาน ISO</td>
+                            <td data-label="ขอบเขต">ระบบบริหารคุณภาพ</td>
+                            <td data-label="ระยะเวลารับรอง">3 ปี</td>
+                            </tr>
+                            <tr>
+                            <td data-label="มาตรฐาน">CCPC (Clinical Care Program Certification)</td>
+                            <td data-label="องค์กรที่รับรอง">สถาบันรับรองคุณภาพสถานพยาบาล (สรพ.)	</td>
+                            <td data-label="ขอบเขต">โปรแกรมการดูแลเฉพาะโรค</td>
+                            <td data-label="ระยะเวลารับรอง">2 ปี</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    </div>
+            </div>
+        </section>
+
+   </main>
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    
+                    <h4>HS4 Health Service Support Standards System</h4>
+                    <p>ระบบประเมินมาตรฐานสุขภาพ HS4 มุ่งมั่นในการยกระดับคุณภาพและการมาตรฐานการให้บริการด้านสุขภาพในประเทศไทย</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>หน้าหลัก</h4>
+                    <ul>
+                        <li><a href="#">ข้อมูลเปิด</a></li>
+                        <li><a href="#">มาตรฐาน HS4</a></li>
+                        <li><a href="#">โรงพยาบาลยอดเยี่ยม</a></li>
+                        <li><a href="#">ข้อมูลสรุป</a></li>
+                        <li><a href="#">มาตรฐานบริการ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>บริการของเรา</h4>
+                    <ul>
+                        <li><a href="#">การรับรองมาตรฐาน</a></li>
+                        <li><a href="#">การอบรมและพัฒนา</a></li>
+                        <li><a href="#">การให้คำปรึกษา</a></li>
+                        <li><a href="#">งานวิจัยและพัฒนา</a></li>
+                        <li><a href="#">เอกสารและสื่อ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>ติดต่อเรา</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> เลขที่ 88/88 ถนนติวานนท์ อำเภอเมือง จังหวัดนนทบุรี 11000</p>
+                    <p><i class="fas fa-phone"></i> 02-123-4567</p>
+                    <p><i class="fas fa-envelope"></i> info@hs4standards.co.th</p>
+                    <h4>รับข่าวสารจากเรา</h4>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="อีเมลของคุณ">
+                        <button type="submit" class="btn-submit">สมัคร</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 HS4 Health Service Support Standards System. สงวนลิขสิทธิ์.</p>
+                <p>นโยบายความเป็นส่วนตัว | เงื่อนไขการใช้งาน | แผนผังเว็บไซต์</p>
+            </div>
+        </div>
+    </footer>
+
+<script src="/hs4-web-1.js"></script>
+
+</body>
+</html>
